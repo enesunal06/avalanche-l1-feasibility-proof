@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "capacity": 20000,
+    "target": 10000,
+    "minPrice": 512,
+    "excessConversionConstant": 1246488515
+  },
+  "id": 1
+}

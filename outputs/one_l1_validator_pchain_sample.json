@@ -1,0 +1,29 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "nodeID": "NodeID-ERsmGLYQWuwx8nibHTig6JGYbS4uUYW2D",
+    "weight": "100",
+    "startTime": "1779459623",
+    "validationID": "2iq93TLZsZXxjhzDBPy5RVmh1Two7Uddrvf3Zo95NQe6HWeZFb",
+    "publicKey": "0x89132ab0edcbb1067087f3901caa0e9c6f9c2f603a798c5ae76c9ac364d8783dda63b4df2871b7c89177f8f2ea780712",
+    "remainingBalanceOwner": {
+      "locktime": "0",
+      "threshold": "1",
+      "addresses": [
+        "P-avax1z8877h4pyw376309jy0uywzl7hf7u7fkwt5vlg"
+      ]
+    },
+    "deactivationOwner": {
+      "locktime": "0",
+      "threshold": "1",
+      "addresses": [
+        "P-avax12pdvdwgvx8tzlxc0syvxuph9mp2yuxu9a0uc8d"
+      ]
+    },
+    "minNonce": "0",
+    "balance": "0",
+    "subnetID": "2sseUhPNj1G7rV5hUQzoadUx15kybrjQdVrAiNS1MnxeZSn1fs",
+    "height": "24996982"
+  },
+  "id": 1
+}

@@ -1,0 +1,45 @@
+{
+  "description": "Minimal AVAX-side channel-decomposition example using sampled Avalanche L1 validator records. This is not the final dataset and not a price-prediction model. It is the smallest working implementation of the proposal's AVAX-side measurement logic.",
+  "input_file": "outputs\\l1_validators_sample.csv",
+  "definitions": {
+    "V_part_sample": "Number of unique sampled L1 validators grouped by subnetId.",
+    "V_fee_min_avax_per_month": "V_part_sample multiplied by the proposal-level monthly P-Chain validation-fee approximation.",
+    "V_subnet": "Subnet-level aggregation of sampled validator participation, remaining balance, and minimal AVAX-side fee exposure."
+  },
+  "limitations": [
+    "This example uses a small sampled validator dataset.",
+    "It only demonstrates the AVAX-side channels V_part, V_fee, and V_subnet.",
+    "It does not compute L1-native channels such as U_gas, U_route, U_sec, or U_gov.",
+    "The full project will generalize this logic to a complete post-Etna dataset."
+  ],
+  "selected_base_case": {
+    "subnetId": "2sseUhPNj1G7rV5hUQzoadUx15kybrjQdVrAiNS1MnxeZSn1fs",
+    "V_part_sample": 5,
+    "sample_total_remainingBalance_raw": 0,
+    "assumed_monthly_validation_fee_avax": 1.33,
+    "V_fee_min_avax_per_month": 6.65
+  },
+  "all_sampled_subnet_summaries": [
+    {
+      "subnetId": "2sseUhPNj1G7rV5hUQzoadUx15kybrjQdVrAiNS1MnxeZSn1fs",
+      "V_part_sample": 5,
+      "sample_total_remainingBalance_raw": 0,
+      "assumed_monthly_validation_fee_avax": 1.33,
+      "V_fee_min_avax_per_month": 6.65
+    },
+    {
+      "subnetId": "o4Eariv2Cx1fTvPFXYofpJfS9KgwFaiGN8KFGcCeZM9t87GJr",
+      "V_part_sample": 3,
+      "sample_total_remainingBalance_raw": 47908783168,
+      "assumed_monthly_validation_fee_avax": 1.33,
+      "V_fee_min_avax_per_month": 3.99
+    },
+    {
+      "subnetId": "eYwmVU67LmSfZb1RwqCMhBYkFyG8ftxn6jAwqzFmxC9STBWLC",
+      "V_part_sample": 2,
+      "sample_total_remainingBalance_raw": 666906581,
+      "assumed_monthly_validation_fee_avax": 1.33,
+      "V_fee_min_avax_per_month": 2.66
+    }
+  ]
+}
